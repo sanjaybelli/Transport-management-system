@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TransportationApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Bus Management System</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div ng-controller="BusController as busCtrl">
+        <h1>Bus Management System</h1>
+        <ul>
+            <li ng-repeat="bus in busCtrl.buses">
+                <strong>{{ bus.name }}</strong> - {{ bus.route }}
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
